@@ -58,7 +58,7 @@ input {
 </head>
 <body>
 
-	<h1>Financanças Brasil</h1>
+	<h1>FinançasPro</h1>
 	<br>
 	<br>
 
