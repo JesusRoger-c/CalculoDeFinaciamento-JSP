@@ -31,6 +31,11 @@ color: white;
 color:red;
 }
 
+img{
+width: 200px;
+height:200px;
+}
+
 </style>
 <meta charset="UTF-8">
 <title>ERRO</title>
@@ -41,6 +46,9 @@ color:red;
 
 <h1>Infelizmente ocorreu um erro no seu Sistema, contate algum estudante do IFSP :) </h1><br>
 <br>
+
+
+<img src="exception.png" alt="error">
 <h2 class="erro">Erro que ocorreu:</h2>
 
 <h2 class="exception"> <%=exception%> </h2> 

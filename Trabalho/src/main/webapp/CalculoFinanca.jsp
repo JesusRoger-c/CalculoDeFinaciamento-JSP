@@ -8,12 +8,17 @@
 
 body {
 	margin: 0;
-	background: #008B8B;
+	background: #201b2c;
 }
-h1{
 
+.logo {
+	text-align: center;
+	color: #00ff88;
+}
+
+.result{
 color: white;
-
+margin: 20px;
 }
 
 h3{
@@ -39,21 +44,21 @@ input{
 	box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
+img{
+width: 200px;
+height:200px;
+}
+
+
 
 </style>
 <meta charset="UTF-8">
 <title>Financiamento</title>
 </head>
 <body>
+<h1 class="logo">FinançasPro</h1><br>
 
-	<h1>
-		Olá,
-		<%
-	out.print(session.getAttribute("nome"));
-	%>
-	</h1>
-	<br>
-<h3>Sua parcela será de:</h3>
+<img src="financiamento02.png" alt="financiamento"><br>
 
 	<%
 	double resultado = 0;
@@ -70,12 +75,13 @@ input{
 		out.print("O numero minimo de parcelas devem ser 6");
 	} else {
 
-		 out.print(parcelas + " " + "x"  + " R$" + resultado + " reais"); 
-
 	}
-	%><br>
+	%>
+	
+	
+	<h2 class="result">Sua parcela será de:<br> <%=parcelas%> x <%=resultado%> reais</h2>
 	<br>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
 
 	<form Action="Login.jsp" Method="get">
 

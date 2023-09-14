@@ -52,6 +52,25 @@ input {
 	cursor: pointer;
 	box-shadow: 0px 10px 40px -12px #00ff8052;
 }
+
+.chamada {
+	text-align: left;
+	margin: 20px;
+}
+
+.principal {
+	color: white;
+	margin: 20px;
+}
+
+.requisitos {
+	color: white;
+	margin: 20px;
+}
+
+ol {
+	color: red;
+}
 </style>
 <meta charset="UTF-8">
 <title>Financiamento</title>
@@ -62,19 +81,43 @@ input {
 	<br>
 	<br>
 
-	<form action="CalculoFinanca.jsp" method="get" class="form1">
+	<h1 class="chamada">
+		Olá,<br>
+		<%
+		out.print(session.getAttribute("nome"));
+		%>
+	</h1>
+	<br>
 
-		VALOR DO FINANCIAMENTO: <input type="number" name="vlTotal" placeholder="Valor de Financiamento"><br>
+	<h3 class="principal">Seja Bem-vindo(a) ao nosso sistema de
+		cálculo de Financiamento!</h3>
+	<p class="requisitos">Antes de realizar o seu cálculo, é preciso se
+		atentar em alguns requisitos:</p>
+	<ol>A entrada deve ser no mínimo 20% do valor total;
+	</ol>
+	<ol>A parcela deve ser de no mínimo 6x.
+	</ol>
+	<br>
+	<br>
 
-		VALOR DE ENTRADA: <input type="number" name="entrada" placeholder="Valor de Entrada"><br>
+
+	
+		<form action="CalculoFinanca.jsp" method="get" class="form1">
+
+			VALOR DO FINANCIAMENTO: <input type="number" name="vlTotal"
+				placeholder="Valor de Financiamento"><br> VALOR DE
+			ENTRADA: <input type="number" name="entrada"
+				placeholder="Valor de Entrada"><br> QUANTIDADE DE
+			PARCELAS: <input type="number" name="parcelas"
+				placeholder="Quantidade de Parcelas"><br> <br> <input
+				type="submit" value="Calcular" name="btn">
 
 
-		QUANTIDADE DE PARCELAS: <input type="number" name="parcelas" placeholder="Quantidade de Parcelas"><br>
-		<br> <input type="submit" value="Calcular" name="btn">
 
 
 
-	</form>
+		</form>
+
 
 </body>
 </html>

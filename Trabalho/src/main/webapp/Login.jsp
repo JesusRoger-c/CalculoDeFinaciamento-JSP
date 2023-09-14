@@ -21,15 +21,17 @@ margin: 0;
 
 .left-login{
 width: 30vw;
-height: 30vh;
+height: 40vh;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 
 }
 
-.left-login  h1{
+ h1{
 color: #77ffc0;
+
+
 
 }
 
@@ -111,6 +113,14 @@ cursor: pointer;
 box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
+img{
+
+width: 200px;
+height:200px;
+align-item: center;
+
+}
+
 
 
 
@@ -127,9 +137,11 @@ box-shadow: 0px 10px 40px -12px #00ff8052;
 
 		<div class="left-login">
 
-			<h1>
+			<h1 class="loginleft">
 				Faça o login<br> E entre para o nosso Time
 			</h1>
+			
+			<img alt="login.png" src="login.png">
 			
 
 		</div>
